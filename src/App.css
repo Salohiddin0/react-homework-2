@@ -55,15 +55,6 @@ input {
     text-decoration: none;
 }
 
-.linkNotFound {
-    border: 1px solid #21da84;
-    padding: 10px 20px;
-    background-color: #21da84;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
 .notFound-p {
     margin-bottom: 40px;
 }
@@ -72,4 +63,11 @@ input {
     padding: 10px 40px;
 }
 
-.btn-car {}
+.btn-not-found {
+    border: 1px solid #21da84;
+    padding: 10px 20px;
+    background-color: #21da84;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}

@@ -90,12 +90,14 @@ const OneCardPage = () => {
   )
 }
 
-const notFound = () => {
+const NotFound = () => {
   return (
     <div className='page'>
       <h1>404 - Page Not Found </h1>
-      <p>The page you are looking for does not exist.</p>
-      <Link to='/'>Go Back to Home</Link>
+      <p className='notFound-p'>The page you are looking for does not exist.</p>
+      <Link className='btn-not-found' to='/'>
+        Go Back to Home
+      </Link>
     </div>
   )
 }
@@ -108,7 +110,7 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/cars' element={<CarsTable />} />
         <Route path='/cars/:id' element={<OneCardPage />} />
-        <Route path='*' element={<notFound />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
   )
